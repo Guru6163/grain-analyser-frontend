@@ -20,7 +20,7 @@ function App() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        setProcessedImage(null)
         const formData = new FormData();
         formData.append('file', file);
         formData.append('min_threshold_length', minThresholdLength);
